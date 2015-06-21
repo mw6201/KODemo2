@@ -22,6 +22,7 @@ class GalleryItemsLayout: UICollectionViewLayout {
     
     // MARK: -
     // MARK: Layout
+    //
     
     override func prepareLayout() {
         super.prepareLayout()
