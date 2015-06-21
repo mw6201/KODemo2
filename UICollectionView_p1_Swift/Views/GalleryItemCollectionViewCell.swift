@@ -10,10 +10,10 @@ import UIKit
 
 class GalleryItemCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet var itemImageView: UIImageView!
+    @IBOutlet var itemImageView: UITextField!
     
     func setGalleryItem(item:GalleryItem) {
-        itemImageView.image = UIImage(named: item.itemImage)
+        itemImageView.text = item.itemImage
     }
     
 }

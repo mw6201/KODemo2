@@ -25,6 +25,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         collectionView.registerNib(nib, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "GalleryItemCommentView")
         
         collectionView.reloadData()
+        
+        var _kc = (UIApplication.sharedApplication().delegate! as! AppDelegate)._KOClient
+        _kc.Login()
     }
     
     private func initGalleryItems() {

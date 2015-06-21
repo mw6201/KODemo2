@@ -19,6 +19,7 @@
 		4799A0431A1DE847003EBC14 /* GalleryItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4799A0421A1DE847003EBC14 /* GalleryItemCollectionViewCell.swift */; };
 		B2ADFD941AA21C8D000CED8F /* GalleryItemCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2ADFD931AA21C8D000CED8F /* GalleryItemCommentView.xib */; };
 		B2ADFD961AA21D24000CED8F /* GalleryItemsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADFD951AA21D24000CED8F /* GalleryItemsLayout.swift */; };
+		CE22B6C51B36D12C00597483 /* KOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE22B6C41B36D12C00597483 /* KOClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		4799A0421A1DE847003EBC14 /* GalleryItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		B2ADFD931AA21C8D000CED8F /* GalleryItemCommentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalleryItemCommentView.xib; sourceTree = "<group>"; };
 		B2ADFD951AA21D24000CED8F /* GalleryItemsLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryItemsLayout.swift; sourceTree = "<group>"; };
+		CE22B6C41B36D12C00597483 /* KOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KOClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		4799A0321A1DE3D4003EBC14 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE22B6C41B36D12C00597483 /* KOClient.swift */,
 				4799A03C1A1DE7DC003EBC14 /* GalleryItem.swift */,
 			);
 			path = Models;
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4799A0411A1DE839003EBC14 /* GalleryItemCommentView.swift in Sources */,
+				CE22B6C51B36D12C00597483 /* KOClient.swift in Sources */,
 				B2ADFD961AA21D24000CED8F /* GalleryItemsLayout.swift in Sources */,
 				4799A0391A1DE3D4003EBC14 /* ViewController.swift in Sources */,
 				4799A0361A1DE3D4003EBC14 /* AppDelegate.swift in Sources */,

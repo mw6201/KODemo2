@@ -50,18 +50,30 @@ class GalleryItemsLayout: UICollectionViewLayout {
             
             for var item = 0; item < numberOfItems; item++ {
                 
-                let indexPath = NSIndexPath(forItem: item, inSection: section)
+                let indexPath : NSIndexPath = NSIndexPath(forItem: item, inSection: section)
                 let attributes = UICollectionViewLayoutAttributes(forCellWithIndexPath: indexPath) // 4
                 
                 var itemSize = CGSizeZero
                 var increaseRow = false
                 
+                /*
                 if self.collectionView!.frame.size.width - xOffset > self.maximumItemWidth * 1.5 {
                     itemSize = randomItemSize() // 5
                 } else {
                     itemSize.width = self.collectionView!.frame.size.width - xOffset - self.horizontalInset
                     itemSize.height = self.itemHeight
                     increaseRow = true // 6
+                }
+                */
+                
+                println("Section: \(section) Item: \(item) Row: \(indexPath.row)")
+                
+                itemSize.width = 150
+                itemSize.height = 20
+                
+                if indexPath.row % 8 == 0 && indexPath.row > 0 {
+                    increaseRow = true
+                    println("Next line")
                 }
                 
                 attributes.frame = CGRectIntegral(CGRectMake(xOffset, yOffset, itemSize.width, itemSize.height))
@@ -85,7 +97,12 @@ class GalleryItemsLayout: UICollectionViewLayout {
         
         yOffset += self.itemHeight // 10
         
-        _contentSize = CGSizeMake(self.collectionView!.frame.size.width, yOffset + self.verticalInset) // 11
+        var _width = self.collectionView!.frame.size.width
+        var _height = yOffset + self.verticalInset
+        
+        println("Size: width \(_width) height \(_height)")
+        
+        _contentSize = CGSizeMake(_width, _height) // 11
         
     }
     
